@@ -41,9 +41,6 @@ public class Main {
 }
 ```
 
-Comprehension check! What do we think this program would output if we were to
-run it?
-
 <details>
     <summary>Comprehension check! What do we think this program would output if we were to run it?</summary>
 
@@ -51,12 +48,12 @@ run it?
 
 </details>
 
-To utilize the Java Visualizer Program we need to run this program in debug.
-When we run the debugger, it will run just like it would if we were to run the
-program with the run command. The only exception is we can tell the debugger to
-stop on specific lines of code and pause the execution of the program. The lines
-it stops on are lines that we define. These are called **breakpoints** and can
-be specified anywhere in the source code.
+To utilize the Java Visualizer Program we need to run this program in debug
+mode. When we run the debugger, it will run just like it would if we were to
+run the program with the run command. The only exception is we can tell the
+debugger to stop on specific lines of code and pause the execution of the
+program. The lines it stops on are lines that we define. These are called
+**breakpoints** and can be specified anywhere in the source code.
 
 When a debugger comes across a breakpoint, it will stop and give you control
 over the execution of the subsequent lines of code.
@@ -66,6 +63,9 @@ the open space to the right of the line number in the editor window - a red dot
 will appear to indicate that you successfully set a breakpoint on that line:
 
 ![set-breakpoint](https://curriculum-content.s3.amazonaws.com/java-mod-1/java-visualizer-and-memory/set-breakpoint.png)
+
+Note: If you accidentally set the breakpoint on the wrong line, or no longer
+need the breakpoint, click the red dot to remove it.
 
 Now that we have set a breakpoint, let's run this program in debug mode. To do
 so, click the little green bug next to the run button in the upper right of the
@@ -80,7 +80,7 @@ control what happens when we set a breakpoint. In the debug console, click the
 
 ![java-visualizer-debug window](https://curriculum-content.s3.amazonaws.com/java-mod-1/java-visualizer-and-memory/java-visualizer-debug-window.png)
 
-The other buttons to the right of the Java Visualizer tab that re highlighted in
+The other buttons to the right of the Java Visualizer tab that we highlighted in
 the screenshot above show how to proceed with the execution of the program. We
 will highlight each of those buttons in a later lesson. For now, click the
 step over
@@ -105,10 +105,10 @@ variables, `x`, `y`, and `z` stored on the stack inside of memory.
 
 ![call-stack-xyz](https://curriculum-content.s3.amazonaws.com/java-mod-1/java-visualizer-and-memory/call-stack-xyz.png)
 
-### Using the Brower Java Visualizer
+### Using the Browser Based Java Visualizer
 
-We could also copy and paste this code into the Java Visualizer. The browser
-based Java Visualizer can be found here:
+We could also copy and paste this code into the browser based Java Visualizer.
+The browser based Java Visualizer can be found here:
 
 [Java Visualizer for Variables and Call Stack Lesson](https://pythontutor.com/visualize.html#code=public%20class%20Main%20%7B%0A%20%20%20%20public%20static%20void%20main%28String%5B%5D%20args%29%20%7B%0A%20%20%20%20%20%20%20%20int%20x%20%3D%201%3B%0A%20%20%20%20%20%20%20%20int%20y%20%3D%202%3B%0A%20%20%20%20%20%20%20%20int%20z%20%3D%203%3B%0A%20%20%20%20%7D%0A%7D&cumulative=false&curInstr=1&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=java&rawInputLstJSON=%5B%5D&textReferences=false)
 
@@ -140,8 +140,9 @@ public class Main {
 }
 ```
 
-Let's put a breakpoint on line 9 and run the program in the debugger to see
-what happens with memory when we re-assign the variables `x` and `z`:
+Remove the breakpoint on line 5 by clicking on the red dot next to the line
+number. Now we'll put a breakpoint on line 9 and run the program in the debugger
+to see what happens with memory when we re-assign the variables `x` and `z`.
 
 ![call-stack-xyz](https://curriculum-content.s3.amazonaws.com/java-mod-1/java-visualizer-and-memory/call-stack-xyz-again.png)
 
